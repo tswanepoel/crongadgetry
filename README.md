@@ -52,7 +52,7 @@ Expression: * * * * * * * * ? (every 100 nanoseconds)
 ---
 Here are some code snippets that illustrate how the results were determined.
 
-**Quartz v2.3 (2.3.0.18)**
+**Quartz .NET v2.3 (2.3.0.18)**
 ```C#
 var quartz = new CronExpression(expr);
 
