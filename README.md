@@ -7,7 +7,7 @@ The CRON Gadgetry project aims to demonstrate how a CRON string can be parsed an
 ### Extended Format
 **_Nanosecond_** | **_Microsecond_** | **_Millisecond_** | *Second* | *Minute* | *Hour* | *Day of Month* | *Month* | *Day of Week* | *Year (Optional)*
 
-> System.DateTimeOffset only specifies up to hundredth's of nanoseconds (at the 7th decimal place). Therefore, nanoseconds may only be specified in hundredth's, accordingly. For example, 0, 100, 200, 300, .. 900.
+> System.DateTimeOffset only specifies up to hundredth's of nanoseconds (at the 7th decimal place). Therefore, _Nanosecond_ may only be specified in hundredth's, accordingly. For example, 0, 100, 200, 300, .. 900.
 
 ### CRON Timer
 
