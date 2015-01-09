@@ -1,5 +1,5 @@
 # CRON Gadgetry
-The CRON Gadgetry project aims to demonstrate how a CRON string can be parsed and enumerated for occurrences. This project further extends expressions with 3 additional tokens; Milliseconds, Microseconds and Nanoseconds. Ultimately, they allow representing any System.DataTimeOffset, retaining its precision of up to 7 decimal places. That is, from 1/1/0001 12:00:00.0000000 AM to 12/31/9999 11:59:59.9999999 PM.
+The CRON Gadgetry project aims to demonstrate how a CRON string can be parsed and enumerated for occurrences. This project further extends expressions with 3 additional tokens; _Millisecond_, _Microsecond_ and _Nanosecond_. Ultimately, they allow representing any System.DataTimeOffset, retaining its precision of up to 7 decimal places. That is, from 1/1/0001 12:00:00.0000000 AM to 12/31/9999 11:59:59.9999999 PM.
 
 ### Simple Format
 *Second* | *Minute* | *Hour* | *Day of Month* | *Month* | *Day of Week* | *Year (Optional)*
