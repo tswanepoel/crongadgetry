@@ -47,7 +47,7 @@ Expression: * * * * * * * * ? (every 100 nanoseconds)
 |   **100,000** |      NA |    0.055 |
 | **1,000,000** |      NA |    0.531 |
 
-> These results can obviously vary using different hardware or under different circumstances. By no means are they intended to be used for anything other than remarking that performance should be fine. Also, keep in mind that Quartz is awesome and does may more other things that we can't do here.
+> These results can obviously vary using different hardware or under different circumstances. By no means are they intended to be complete or used for anything other than perhaps getting some idea of its performance. Keep in mind that Quartz is awesome and does many more other things that we can't do here.
 
 ---
 Here are some code snippets that illustrate how the results were determined.
