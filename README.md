@@ -16,7 +16,7 @@ The CRON Gadgetry project aims to demonstrate how a CRON string can be parsed an
 This demonstration also includes a CronTimer that raises events for occurrences. Additionally, the timer may be created with a System.TimeSpan specified to offset the raising of these events. This is useful when handlers require time to prepare. For example, when specifying TimeSpan.FromSeconds(-1d) as the offset, events will all be raised 1 second early, allowing handlers to connect to a database, read configuration data or perform logging. Within this event handler, a call to the CronTimerEventArgs.Wait blocks the calling thread until the offset elapses to resume execution at the actual time intended for that occurrence.
 
 ### Performance
-These results were determined by timing how long it takes, in seconds, to work out a number of System.DateTimeOffset values.  
+Results were determined by timing how long it takes, in seconds, to work out a number of System.DateTimeOffset values.  
 
 Expression: * * * * * ? (every second)
 
@@ -48,9 +48,9 @@ Expression: * * * * * * * * ? (every 100 nanoseconds)
 | **1,000,000** |      NA |    0.531 |
 
 ---
-The code used to determine these results looks something like this.
+Here are some code snippets that illustrate how the results were determined.
 
-**Quartz**
+**Quartz v2.3 (2.3.0.18)**
 ```C#
 var quartz = new CronExpression(expr);
 
