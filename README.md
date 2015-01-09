@@ -45,11 +45,12 @@ Expression: * * * * * * * * ? (every 100 nanoseconds)
 |   **100,000** |      NA |    0.055 |
 | **1,000,000** |      NA |    0.531 |
 
-The code used looks something like this.
+---
+The code used to determine these results looks something like this.
 
 **Quartz**
 ```C#
-var quartz = new Quartz.CronExpression(expr);
+var quartz = new CronExpression(expr);
 
 var sw = new Stopwatch();
 sw.Start();
