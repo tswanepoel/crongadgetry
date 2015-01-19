@@ -28,14 +28,14 @@ Expression: * * * * * ? (every second)
 | **1,000,000** |  97.376 |    0.932 |
 
 ---
-Expression: 0 0 8-16 ? * MON-FRI (every business hour on weekdays)
+Expression: 0 * 8-16 ? * MON-FRI (every minute of every business hour on weekdays)
 
 |               | Quartz  | Gadgetry |
 | -------------:| -------:| --------:|
-|     **1,000** |   0.047 |    0.016 |
-|    **10,000** |   0.082 |    0.001 |
-|   **100,000** |   0.644 |    0.013 |
-| **1,000,000** |   5.335 |    0.131 |
+|     **1,000** |   0.080 |    0.001 |
+|    **10,000** |   0.745 |    0.012 |
+|   **100,000** |   7.430 |    0.112 |
+| **1,000,000** |  71.095 |    1.121 |
 
 ---
 Expression: * * * * * * * * ? (every 100 nanoseconds)
