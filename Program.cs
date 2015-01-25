@@ -1,5 +1,7 @@
 ﻿namespace CronGadgetry
 {
+    using Scheduling;
+    using Timers;
     using System;
     using System.Diagnostics;
     using System.Linq;
@@ -23,7 +25,7 @@
 
             foreach (var value in CronExpression.Parse("* 0 0 0 0 0 1 JAN ?", CronFormat.Extended)
                                                 .GetAllTimesAfter(DateTimeOffset.Now)
-                                                .Take(5))
+                                                .Take(999999999))
             {
                 Console.WriteLine(value.ToString("O"/*ISO8601*/));
             }
@@ -51,7 +53,19 @@
                 timer.Start();
 
                 Thread.Sleep(TimeSpan.FromSeconds(1d));
-                timer.Stop();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Scheduler...");
+
+            using (var scheduler = new Scheduler())
+            {
+                scheduler.Jobs.Add(new Job(
+                    context => Console.WriteLine(context.Time.ToString("O"/*ISO8601*/)),
+                    new CronTrigger("0 0 0/200 * * * * * ? *", CronFormat.Extended),
+                    new CronTrigger("0 0 100/200 * * * * * ? *", CronFormat.Extended)));
+
+                Thread.Sleep(TimeSpan.FromSeconds(1d));
             }
 
             Console.WriteLine();

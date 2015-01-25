@@ -1,5 +1,7 @@
 ﻿namespace CronGadgetry
 {
+    using Collections;
+    using Extensions;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -102,7 +104,7 @@
             bool firstMillisecond = true;
             bool firstMicrosecond = true;
 
-            var years = _years != null ? _years.GetViewFrom(temp.Year).Values : Enumerable.Range(temp.Year, DateTimeOffset.MaxValue.Year);
+            var years = _years != null ? _years.GetViewFrom(temp.Year).Values : Enumerable.Range(temp.Year, DateTimeOffset.MaxValue.Year - temp.Year + 1);
 
             foreach (var year in years)
             {
