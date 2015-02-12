@@ -1,8 +1,0 @@
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\bin\Debug\CronGadgetry.Console.exe.config
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\bin\Debug\CronGadgetry.Console.exe
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\bin\Debug\CronGadgetry.Console.pdb
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\bin\Debug\CronGadgetry.dll
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\bin\Debug\CronGadgetry.pdb
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\obj\Debug\CronGadgetry.Console.csprojResolveAssemblyReference.cache
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\obj\Debug\CronGadgetry.Console.exe
-C:\Users\Theunis\Documents\GitHub\crongadgetry\CronGadgetry.Console\obj\Debug\CronGadgetry.Console.pdb
