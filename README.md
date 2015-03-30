@@ -22,37 +22,37 @@ Expression: * * * * * ? (every second)
 
 |               | Quartz  | Gadgetry |
 | -------------:| -------:| --------:|
-|     **1,000** |   0.099 |    0.001 |
-|    **10,000** |   0.983 |    0.009 |
-|   **100,000** |   9.902 |    0.094 |
-| **1,000,000** |  97.376 |    0.932 |
+|     **1,000** |   0.042 |    0.007 |
+|    **10,000** |   0.092 |    0.013 |
+|   **100,000** |   0.591 |    0.071 |
+| **1,000,000** |   5.597 |    0.626 |
 
 ---
 Expression: 0 * 8-16 ? * MON-FRI (every minute of every business hour on weekdays)
 
 |               | Quartz  | Gadgetry |
 | -------------:| -------:| --------:|
-|     **1,000** |   0.080 |    0.001 |
-|    **10,000** |   0.745 |    0.012 |
-|   **100,000** |   7.430 |    0.112 |
-| **1,000,000** |  71.095 |    1.121 |
+|     **1,000** |   0.041 |    0.015 |
+|    **10,000** |   0.094 |    0.023 |
+|   **100,000** |   0.603 |    0.095 |
+| **1,000,000** |   5.715 |    0.785 |
 
 ---
 Expression: * * * * * * * * ? (every 100 nanoseconds)
 
 |               | Quartz  | Gadgetry |
 | -------------:| -------:| --------:|
-|     **1,000** |      NA |    0.003 |
-|    **10,000** |      NA |    0.008 |
-|   **100,000** |      NA |    0.055 |
-| **1,000,000** |      NA |    0.531 |
+|     **1,000** |      NA |    0.007 |
+|    **10,000** |      NA |    0.011 |
+|   **100,000** |      NA |    0.052 |
+| **1,000,000** |      NA |    0.441 |
 
 > These results can obviously vary depending on different hardware or circumstances. By no means are they intended to be complete or used for anything other than perhaps noticing that, in this implementation, attention is particularly given to performance. I think Quartz is awesome and does many more other things that we can't even do here.
 
 ---
 Here are some code snippets that illustrate how the results were determined.
 
-**Quartz .NET v2.3 (2.3.0.18)**
+**Quartz .NET v2.3 (2.3.2.0)**
 ```C#
 var quartz = new CronExpression(expr);
 
